@@ -1,0 +1,265 @@
+.control-panel {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.panel-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.reset-btn {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  border-radius: 6px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.controls-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.control-value {
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.slider-container {
+  position: relative;
+  height: 8px;
+}
+
+.control-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.slider-track {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 4px;
+  transition: width 0.2s ease;
+}
+
+.control-description {
+  margin: 0;
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.presets-section {
+  margin-bottom: 2rem;
+}
+
+.presets-section h3 {
+  margin: 0 0 1rem 0;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.presets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.preset-btn {
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.preset-btn:hover {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+  transform: translateY(-1px);
+}
+
+.preset-icon {
+  font-size: 1.2rem;
+}
+
+.preset-name {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.preset-values {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.control-tips {
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #667eea;
+}
+
+.control-tips h4 {
+  margin: 0 0 0.75rem 0;
+  color: #667eea;
+  font-size: 1rem;
+}
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tip-item {
+  color: #ccc;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.tip-item strong {
+  color: #fff;
+}
+
+.real-time-preview {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.real-time-preview h4 {
+  margin: 0 0 1rem 0;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.settings-visualization {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.viz-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.viz-item span {
+  color: #ccc;
+  font-size: 0.85rem;
+  min-width: 80px;
+}
+
+.viz-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.viz-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.viz-fill.expressions {
+  background: linear-gradient(90deg, #f59e0b, #f97316);
+}
+
+.viz-fill.gestures {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.viz-fill.movement {
+  background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+}
+
+@media (max-width: 768px) {
+  .control-panel {
+    padding: 1rem;
+  }
+  
+  .presets-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .panel-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}

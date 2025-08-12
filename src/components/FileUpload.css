@@ -1,0 +1,172 @@
+.file-upload {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.file-upload h2 {
+  margin: 0 0 1.5rem 0;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.upload-section {
+  margin-bottom: 2rem;
+}
+
+.upload-section h3 {
+  margin: 0 0 1rem 0;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.upload-area {
+  border: 2px dashed #555;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.upload-area:hover {
+  border-color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.upload-area.drag-active {
+  border-color: #667eea;
+  background: rgba(102, 126, 234, 0.2);
+  transform: scale(1.02);
+}
+
+.upload-area.has-file {
+  border-color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #888;
+}
+
+.upload-placeholder svg {
+  color: #666;
+}
+
+.upload-placeholder p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.upload-hint {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.file-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.image-preview {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.audio-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.audio-icon {
+  color: #667eea;
+}
+
+.audio-preview audio {
+  width: 250px;
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.file-name {
+  font-weight: bold;
+  color: #fff;
+  word-break: break-all;
+  text-align: center;
+}
+
+.file-size {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.remove-file {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(239, 68, 68, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.remove-file:hover {
+  background: #ef4444;
+  transform: scale(1.1);
+}
+
+.upload-tips {
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 4px solid #667eea;
+}
+
+.upload-tips h4 {
+  margin: 0 0 0.5rem 0;
+  color: #667eea;
+  font-size: 1rem;
+}
+
+.upload-tips ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #ccc;
+}
+
+.upload-tips li {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
